@@ -128,9 +128,12 @@
 ##### **添加如下端口行:**
        -A INPUT -m state --state NEW -m tcp -p tcp --dport 22122 -j ACCEPT
 ##### **重启防火墙:**
-> <font color="red" size = "1px"># service iptables restart</font>
+> <font color="red" size = "1px"># service iptables re
+	
+	
+	t</font>
 #### **启动 Tracker:**
-> <font color="red" size = "1px"># /etc/init.d/fdfs_trackerd star</font>
+> <font color="red" size = "1px"># /etc/init.d/fdfs_trackerd start</font>
 ##### **<font color="red" size = "1px">(初次成功启动，会在/fastdfs/tracker 目录下创建 data、logs 两个目录)</font>**
 ##### 查看 FastDFS Tracker 是否已成功启动:
 > <font color="red" size = "1px"># ps -ef | grep fdfs</font>
