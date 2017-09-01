@@ -128,7 +128,7 @@
 ##### **添加如下端口行:**
        -A INPUT -m state --state NEW -m tcp -p tcp --dport 22122 -j ACCEPT
 ##### **重启防火墙:**
-> <font color="red" size = "1px"># service iptables re
+> <font color="red" size = "1px"># service iptables restart
 	
 	
 	t</font>
